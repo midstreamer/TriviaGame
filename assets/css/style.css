@@ -1,0 +1,29 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    position: absolute;
+    width: 937px;
+    height: 750px;
+    left: 308px;
+    top: 15px;
+    text-align: center;
+
+}
+
+input[type=radio],
+input.radio {
+  display: inline;
+    
+}
+
+p {
+    font-size: 20px;
+}
+
+@media (min-width: 576px)
+.jumbotron {
+    padding: 1rem 1rem;

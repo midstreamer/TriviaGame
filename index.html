@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Trivia</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Trivia Game!</h1>
+        <p class="lead">This is a simple trivia game. The timer below tells you how much time you have to answer the questions.</p>
+        <hr class="my-4">
+        <p>Time remaining:</p>
+        <p id="countdown">60</p>
+        <p id=""></p>
+        <hr>
+
+        <p>What is your favorite NBA team?</p>
+        <form action="">
+            <input type="radio" name="NBA" value="Celics"> Celics
+            <input type="radio" name="NBA" value="Lakers"> Lakers
+            <input type="radio" name="NBA" value="Knicks"> Knicks
+            <input type="radio" name="NBA" value="Rockets"> Rockets
+        </form><br><hr>
+
+        <p>What does RBI mean in Baseball?</p>
+        <form action="">
+            <input type="radio" name="answer" value="Runs Batted In"> Runs Batted In
+            <input type="radio" name="answer" value="Really Bad Inning"> Really Bad Inning
+            <input type="radio" name="answer" value="Runs Belted In"> Runs Belted In
+            <input type="radio" name="answer" value="Rotten Berry Ink"> Rotten Berry Inn
+        </form><br><hr>
+
+        <p>What is your favorite NFL team?</p>
+        <form action="">
+            <input type="radio" name="team" value="Patriats"> Patriats
+            <input type="radio" name="team" value="Texans"> Texans
+            <input type="radio" name="team" value="Saints"> Saints
+            <input type="radio" name="team" value="Jets"> Jets
+        </form><br><hr>
+        <p class="lead">
+            <a class="btn btn-secondary btn-sm" href="#" role="button">Submit</a>
+        </p>
+    </div>
+</body>
+<script>
+    var seconds;
+    var temp;
+
+    function countdown() {
+        seconds = document.getElementById('countdown').innerHTML;
+        seconds = parseInt(seconds, 10);
+
+        if (seconds == 1) {
+            temp = document.getElementById('countdown');
+            temp.innerHTML = "Sorry, Times Up!";
+            return;
+        }
+
+        seconds--;
+
+        temp = document.getElementById('countdown');
+        temp.innerHTML = seconds;
+        timeoutMyOswego = setTimeout(countdown, 1000);
+    }
+
+    countdown();
+
+</script>
+
+</html>
