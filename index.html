@@ -23,57 +23,34 @@
         <p id=""></p>
         <hr>
 
-        <p>What is your favorite NBA team?</p>
+        <p>What’s the medical term for low blood sugar?</p>
         <form action="">
-            <input type="radio" name="NBA" value="Celics"> Celics
-            <input type="radio" name="NBA" value="Lakers"> Lakers
-            <input type="radio" name="NBA" value="Knicks"> Knicks
-            <input type="radio" name="NBA" value="Rockets"> Rockets
+            <input type="radio" name="answer1" value="Hypoglycemia"> Hypoglycemia
+            <input type="radio" name="answer1" value="Hyperglycemia"> Hyperglycemia
+            <input type="radio" name="answer1" value="Glycemic"> Glycemic
+            <input type="radio" name="answer1" value="Miniglycemic"> Miniglycemic
         </form><br><hr>
 
-        <p>What does RBI mean in Baseball?</p>
+        <p>What is the most widely eaten fish in the world?</p>
         <form action="">
-            <input type="radio" name="answer" value="Runs Batted In"> Runs Batted In
-            <input type="radio" name="answer" value="Really Bad Inning"> Really Bad Inning
-            <input type="radio" name="answer" value="Runs Belted In"> Runs Belted In
-            <input type="radio" name="answer" value="Rotten Berry Ink"> Rotten Berry Inn
+            <input type="radio" name="answer2" value="Herring"> Herring
+            <input type="radio" name="answer2" value="Salmon"> Salmon
+            <input type="radio" name="answer2" value="Tuna"> Tuna
+            <input type="radio" name="answer2" value="Bas"> Bass
         </form><br><hr>
 
-        <p>What is your favorite NFL team?</p>
+        <p>What’s the most malleable metal?</p>
         <form action="">
-            <input type="radio" name="team" value="Patriats"> Patriats
-            <input type="radio" name="team" value="Texans"> Texans
-            <input type="radio" name="team" value="Saints"> Saints
-            <input type="radio" name="team" value="Jets"> Jets
+            <input type="radio" name="answer3" value="Silver"> Silver
+            <input type="radio" name="answer3" value="Copper"> Copper
+            <input type="radio" name="answer3" value="Gold"> Gold
+            <input type="radio" name="answer3" value="Steel"> Steel
         </form><br><hr>
         <p class="lead">
             <a class="btn btn-secondary btn-sm" href="#" role="button">Submit</a>
         </p>
+
     </div>
+    <script src="./assets/javascript/app.js"></script>
 </body>
-<script>
-    var seconds;
-    var temp;
-
-    function countdown() {
-        seconds = document.getElementById('countdown').innerHTML;
-        seconds = parseInt(seconds, 10);
-
-        if (seconds == 1) {
-            temp = document.getElementById('countdown');
-            temp.innerHTML = "Sorry, Times Up!";
-            return;
-        }
-
-        seconds--;
-
-        temp = document.getElementById('countdown');
-        temp.innerHTML = seconds;
-        timeoutMyOswego = setTimeout(countdown, 1000);
-    }
-
-    countdown();
-
-</script>
-
 </html>
