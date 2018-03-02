@@ -35,13 +35,3 @@ $("#incorrect").text(incorrectAnswers); //this returns the text losses for the e
 
           
     });
-        
-        
-    
-        //$("#yourScore").text(counter);
-        //if (counter == Random){
-           // won();
-       // }
-       // else if (counter > Random){
-            //lost();
-        //}
