@@ -24,14 +24,25 @@ $("#incorrect").text(incorrectAnswers); //this returns the text losses for the e
 
     countdown();
 
+    
 
-    //$(".btn-sm").on("click", function(){
-        //console.log("working");
+
     $(".btn-sm").on("click", function(){
-        if(document.getElementById("correctAnswer").checked) {
+        if(document.getElementById("correctAnswer1").checked) {
+            correctAnswers++;
+            $("#correct").text(correctAnswers);
+        }
+        if(document.getElementById("correctAnswer2").checked) {
+            correctAnswers++;
+            $("#correct").text(correctAnswers);
+        }
+        if(document.getElementById("correctAnswer3").checked) {
             correctAnswers++;
             $("#correct").text(correctAnswers);
         }
 
+                   
+        })
+
           
-    });
+    ;
