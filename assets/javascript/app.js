@@ -19,12 +19,14 @@ $("#incorrect").text(incorrectAnswers); //this returns the text losses for the e
 
         temp = document.getElementById("countdown");
         temp.innerHTML = seconds;
-        timeoutMyOswego = setTimeout(countdown, 1000);
+        timeout = setTimeout(countdown, 1000);
     }
 
     countdown();
 
-    
+    function countdownStop(){
+        clearTimeout(timeout);
+    }
 
 
     $(".btn-sm").on("click", function(){
@@ -40,9 +42,7 @@ $("#incorrect").text(incorrectAnswers); //this returns the text losses for the e
             correctAnswers++;
             $("#correct").text(correctAnswers);
         }
+        countdownStop();
 
-                   
-        })
 
-          
-    ;
+    });
